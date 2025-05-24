@@ -13,7 +13,7 @@ def tell(hr24: bool = True, showtimezone: bool = False):
   tz = pytz.timezone(choice(pytz.all_timezones))
   now = datetime.now(tz)
 
-  time_format = f"%A %B %-m, %Y, {'%H' if hr24 else '%I'}:%M:%S"
+  time_format = f"%A %B %m, %Y, {'%H' if hr24 else '%I'}:%M:%S"
   if showtimezone:
     time_format += f" %Z"
 
