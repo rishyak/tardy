@@ -96,7 +96,7 @@ wheels = [
 [[package]]
 name = "tardy"
 version = "1.0.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "pytz" },
     { name = "typer" },

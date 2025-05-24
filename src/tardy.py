@@ -4,10 +4,10 @@ from typing import Optional
 import pytz
 import typer
 
-app = typer.Typer()
+tardy = typer.Typer()
 
 
-@app.command()
+@tardy.command()
 def tell(hr24: bool = True, showtimezone: bool = False):
   """Tells you the current time in a timezon of its choosing"""
   tz = pytz.timezone(choice(pytz.all_timezones))
@@ -21,4 +21,4 @@ def tell(hr24: bool = True, showtimezone: bool = False):
 
 
 if __name__ == "__main__":
-  app()
+  tardy()

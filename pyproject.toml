@@ -4,13 +4,14 @@ version = "1.0.0"
 description = "A simple Python package that tells you the time."
 readme = "ReadMe.md"
 requires-python = ">=3.13"
-license = {text = "MIT"}
-authors = [
-  {name = "Rishyak", email = "hello@rishyak.com"},
-]
+license = { text = "MIT" }
+authors = [{ name = "Rishyak", email = "hello@rishyak.com" }]
 keywords = ["time", "datetime", "clock"]
-dependencies = [
-  "pytz>=2025.2",
-  "typer>=0.15.4",
-  "yapf>=0.43.0",
-]
+dependencies = ["pytz>=2025.2", "typer>=0.15.4", "yapf>=0.43.0"]
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project.scripts]
+tardy = "tardy:tardy"
