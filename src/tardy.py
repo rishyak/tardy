@@ -9,7 +9,7 @@ tardy = typer.Typer()
 
 @tardy.command()
 def tell(hr24: bool = True, showtimezone: bool = False):
-  """Tells you the current time in a timezon of its choosing"""
+  """Tells you the current time in a timezone of its choosing"""
   tz = pytz.timezone(choice(pytz.all_timezones))
   now = datetime.now(tz)
 
