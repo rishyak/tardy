@@ -12,3 +12,6 @@ If you're the kind of person to ask an AI for time, this tool is for you!
 ## Cons
 - You are not bankfilling big AI :(
 - This was not vibe coded
+
+---
+To be honest, this has become a repo to experiment with Python build systems
