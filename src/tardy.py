@@ -1,6 +1,5 @@
 from datetime import datetime
 from random import choice
-from typing import Optional
 import pytz
 import typer
 
@@ -15,7 +14,7 @@ def tell(hr24: bool = True, showtimezone: bool = False):
 
   time_format = f"%A %B %m, %Y, {'%H' if hr24 else '%I'}:%M:%S"
   if showtimezone:
-    time_format += f" %Z"
+    time_format += " %Z"
 
   print(now.strftime(time_format))
 
