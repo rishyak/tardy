@@ -13,14 +13,11 @@ dependencies = ["pytz>=2025.2", "typer>=0.15.4"]
 requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 
-[tool.hatch.build.targets.wheel]
-packages = ["src"]
-
 [tool.hatch.build.hooks.custom]
 path = "util/file_name_does_not_matter.py"
 
 [project.scripts]
-tardy = "src.tardy:tardy"
+tardy = "tardy.cli:tardy"
 
 [project.optional-dependencies]
 dev = ["hatchling>=1.27.0", "ruff>=0.11.12", "yapf>=0.43.0"]
