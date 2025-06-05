@@ -1,13 +1,9 @@
 from datetime import datetime
 from random import choice
 import pytz
-import typer
-
-tardy = typer.Typer()
 
 
-@tardy.command()
-def tell(hr24: bool = True, showtimezone: bool = False):
+def random_time(hr24: bool = True, showtimezone: bool = False):
   """Tells you the current time in a timezone of its choosing"""
   tz = pytz.timezone(choice(pytz.all_timezones))
   now = datetime.now(tz)
@@ -16,8 +12,4 @@ def tell(hr24: bool = True, showtimezone: bool = False):
   if showtimezone:
     time_format += " %Z"
 
-  print(now.strftime(time_format))
-
-
-if __name__ == "__main__":
-  tardy()
+  return now.strftime(time_format)
