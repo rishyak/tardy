@@ -1,6 +1,6 @@
 [project]
 name = "tardy"
-version = "1.0.0"
+version = "1.1.0"
 description = "A simple Python package that tells you the time."
 readme = "ReadMe.md"
 requires-python = ">=3.13"
