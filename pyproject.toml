@@ -20,7 +20,7 @@ packages = ["src"]
 path = "util/file_name_does_not_matter.py"
 
 [project.scripts]
-tardy = "tardy:tardy"
+tardy = "src.tardy:tardy"
 
 [project.optional-dependencies]
 dev = ["hatchling>=1.27.0", "ruff>=0.11.12", "yapf>=0.43.0"]
