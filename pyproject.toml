@@ -1,5 +1,5 @@
 [project]
-name = "tardy"
+name = "tardyclock"
 version = "1.2.0"
 description = "You want the time? Here, have all of the times."
 readme = "ReadMe.md"
@@ -18,7 +18,7 @@ build-backend = "hatchling.build"
 path = "util/file_name_does_not_matter.py"
 
 [project.scripts]
-tardy = "tardy.cli:tardy"
+tardy = "tardyclock.cli:tardy"
 
 [project.optional-dependencies]
 dev = ["hatchling>=1.27.0", "ruff>=0.11.12", "yapf>=0.43.0"]
