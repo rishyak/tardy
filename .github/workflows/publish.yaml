@@ -56,6 +56,7 @@ jobs:
       - name: Fetch artifacts
         uses: actions/download-artifact@v4
         with:
+          name: dists
           path: dist/
 
       - name: Upload to GitHub
