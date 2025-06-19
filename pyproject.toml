@@ -1,7 +1,7 @@
 [project]
 name = "tardy"
-version = "1.1.0"
-description = "A simple Python package that tells you the time."
+version = "1.2.0"
+description = "You want the time? Here, have all of the times."
 readme = "ReadMe.md"
 requires-python = ">=3.13"
 license = "MIT"
